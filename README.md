@@ -15,12 +15,6 @@ found 0 vulnerabilities
 > node proxy.js & cd test ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!
 
 Proxy listening on http://localhost:8080
-npm WARN old lockfile
-npm WARN old lockfile The package-lock.json file was created with an old version of npm,
-npm WARN old lockfile so supplemental metadata must be fetched from the registry.
-npm WARN old lockfile
-npm WARN old lockfile This is a one-time fix-up, please be patient...
-npm WARN old lockfile
 npm ERR! code E404
 npm ERR! 404 Not Found - GET http://localhost:8080/@babel/helper-validator-identifier/-/helper-validator-identifier-7.14.5.tgz
 npm ERR! 404

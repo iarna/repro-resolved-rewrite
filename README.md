@@ -1,7 +1,7 @@
 To repro, using npm 7:
 
 ```
-$ npm i
+$ npm it
 npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
 
 added 162 packages, and audited 163 packages in 3s
@@ -10,7 +10,7 @@ added 162 packages, and audited 163 packages in 3s
   run `npm fund` for details
 
 found 0 vulnerabilities
-$ npm run test
+
 > poc-resolved-rewrite@1.0.0 test
 > node proxy.js & cd test ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!
 

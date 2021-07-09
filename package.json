@@ -1,0 +1,12 @@
+{
+  "name": "poc-resolved-rewrite",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node proxy.js & cd test ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "make-fetch-happen": "^9.0.3",
+    "restify": "^8.5.1"
+  }
+}

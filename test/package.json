@@ -1,0 +1,7 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "dependencies": {
+    "@babel/helper-validator-identifier":"^7.14.5"
+  }
+}

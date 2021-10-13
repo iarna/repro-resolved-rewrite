@@ -2,7 +2,9 @@
   "name": "poc-resolved-rewrite",
   "version": "1.0.0",
   "scripts": {
-    "test": "node proxy.js & cd test ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!"
+    "test": "npm run test-scoped ; npm run test-unscoped",
+    "test-scoped": "node proxy.js & cd test ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!",
+    "test-unscoped": "node proxy.js & cd test-unscoped ; rm -rf empty node_modules ; npm i --registry=http://localhost:8080 --cache=empty ; kill $!"
   },
   "license": "ISC",
   "dependencies": {

@@ -20,7 +20,6 @@ async function proxy (request, response, next) {
   return next()
 }
 
-server.get('/:package/-/:tarball', proxy)
 server.get('/:package', proxy)
 
 
